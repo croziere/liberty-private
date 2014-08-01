@@ -138,8 +138,7 @@ public class LibertyPrivateBlockListener implements Listener {
 		if(type.equals(Material.FURNACE)) return;
 		if(type.equals(Material.BURNING_FURNACE)) return;
 		if(type.equals(Material.WOODEN_DOOR)) return;
-		if(type.equals(Material.IRON_DOOR_BLOCK)) return;
-		//if(type == Material.TRAP_DOOR.getId()) don't return
+		if(type.equals(Material.IRON_DOOR_BLOCK)) return;		
 
 		if(Util.isProtected(checkBlock)) event.setCancelled(true);
 	}
